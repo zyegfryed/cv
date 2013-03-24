@@ -1,132 +1,189 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
-\addbibresource{bibliography.bib}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+\def\home{{\FA \faHome}}
+\def\phone{{\FA \faPhone}}
+\def\inbox{{\FA \faEnvelope}}
+\def\linkedin{{\FA \faLinkedin}}
+\def\twitter{{\FA \faTwitter}}
+\def\github{{\FA \faGithub}}
 
 \begin{document}
-\header{adrien}{friggeri}
-       {social network analyst}
+\header{Sébastien}{Fievet}
+       {Senior Software Engineer}
 
 
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{about}
-    31 rue Smith
-    69002 Lyon
-    France
+    \home\ Ch. Fontaine, 4
+    1260 Nyon
+    Suisse
     ~
-    \href{mailto:adrien@friggeri.net}{adrien@friggeri.net}
-    \href{http://friggeri.net}{http://friggeri.net}
-    \href{http://facebook.com/adrien}{fb://adrien}
+    \phone\ +41 78 821 23 91
+    \inbox\ \href{mailto:sebastien.fievet@gmail.com}{sebastien.fievet@gmail.com}
+    ~
+    \href{https://twitter.com/zyegfryed}{\twitter\ @zyegfryed}
+    \href{http://www.linkedin.com/in/sebastienfievet}{\linkedin\ sebastien.fievet}
+    \href{https://github.com/zyegfryed}{\github\ github:zyegfryed}
   \section{languages}
-    bilingual french/english
-    spanish \& italian notions
+    mother tongue french
+    fluent english
+    notions spanish
   \section{programming}
-    {\color{red} $\varheartsuit$} JavaScript
-    (ES5, node.js)
-    Python, C, OCaml
-    CSS3 \& HTML5
+    {\color{red} $\varheartsuit$} Python
+    (Django, Flask)
+    MySQL, PostgreSQL
+    Redis, Memcached
+    Nginx, Apache, Solr
+    Amazon AWS (EC2, S3)
+    Linux, Mac, Git
 \end{aside}
 
 \section{interests}
 
-complex networks, social networks, community detection, community structure,
-overlapping communities, information diffusion, viral marketing, social
-inference, recommendation, data mining
+Python/DevOps/FOSS enthousiast \& hacker\\
+Django Swiss Meetup organizer
+
+\emph{open source, cloud computing, infrastructure, scalability, high availability, snowboarding, gaming}
 
 \section{education}
 
 \begin{entrylist}
   \entry
-    {since 2009}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {DNET/INRIA, LIP/ÉNS de Lyon}
-    {\emph{A Quantified Theory of Social Cohesion.}}
+    {2003-2004}
+    {Mastère Spécialisé}
+    {Institut Image, École Nationale Supérieure d'Arts et Métiers}
+    {3D computing, Virtual Reality}
   \entry
-    {2007–2008}
-    {M.Sc. magna cum laude}
-    {IXXI, École Normale Supérieure de Lyon}
-    {Majoring in Computer Science\\
-    Specialization in Complex Systems}
+    {2000–2003}
+    {Master of Computer Science with honors}
+    {Polytech Marseille}
+    {Specialization in Software Development and Image Computing}
   \entry
-    {2006–2007}
-    {B.Sc. magna cum laude}
-    {École Normale Supérieure de Lyon}
-    {Majoring in Computer Science}
-  \entry
-    {2003–2006}
+    {1998–2000}
     {Classes Préparatoires aux Grandes Écoles}
-    {Lycée Fénelon, Lycée Louis le Grand, Paris}
-    {Preparation for national competitive entrance exams to leading French ``grandes écoles'', specializing in mathematics and physics.}
+    {Lycée Frédéric Mistral, Avignon}
+    {Preparation for national competitive entrance exams to leading French ``grandes écoles'', specializing in physics and engineering science.}
   \entry
-    {2003}
+    {1998}
     {French Baccalauréat S. with honors}
-    {Lycée Louis le Grand, Paris}
-    {Specialization in mathematics and physics}
+    {Lycée Jean Monnet, Vitrolles}
+    {Specialization in mathematics}
 \end{entrylist}
 
 \section{experience}
 
 \begin{entrylist}
   \entry
-    {02–07 2009}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Visualization of complex networks.}}
+    {2012–2010}
+    {Hyperweek, Geneva}
+    {CTO}
+    {I was in charge of technical-related side from back-end development and architecture, to deployment and monitoring, via infrastructure design and technical strategy/decision:
+    \begin{itemize}
+    \item Evolved from fork-based projects to a framework-based approach with reusable components/apps and pluggable customer project.
+    \item Enhanced infrastructure design and monitoring to handle customer scaling/hosting issue.
+    \item Built a python/puppet-based deployment tool to handle a SAAS-like strategy.
+    \item Developed and deployed dozens of tailored projects based on Hyperweek product.
+    \end{itemize}}
   \entry
-    {06–08 2008}
-    {ISCPIF/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Diffusion in the Blogosphere. Happy Flu.}}
+    {2010}
+    {Undisclosed Company, Geneva}
+    {Freelance}
+    {Lead developer of:
+    \begin{itemize}
+    \item Card Management System
+    \item Micro-finance application
+    \end{itemize}}
   \entry
-    {06–08 2007}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Kernels in real world networks.}}
-  \entry
-    {07–08 2005}
-    {\href{http://www.kelkoo.com}{Kelkoo.com}}
-    {Summer job.}
-    {\emph{Creation of a keyword generator for Google Adwords.}}
-  \entry
-    {07–08 2004}
-    {\href{http://www.monsieurprix.com}{MonsieurPrix.com}}
-    {Summer job.}
-    {\emph{Development of an e-commerce product indexation spider.}}
+    {2010-2009}
+    {Salsadev, Geneva}
+    {VP Product Development}
+    {Lead developer of:
+    \begin{itemize}
+    \item Jetpack-based feature built on top of the semantic platform leveraging a Wikipedia index
+    \item prototypes/website front-end(/back-end)
+    \item internal cloud-computing platform
+    \item API Proxy application (ala Mashery)
+    \item Adobe Air semantic application
+    \end{itemize}}
 \end{entrylist}
 
-\section{applications}
+% FIX: Ugly hack to break page on entrylist
+\clearpage
 
 \begin{entrylist}
   \entry
-    {2012}
-    {Who did I forget ?}
-    {\href{http://whodidiforget.com}{whodidiforget.com}}
-    {Guest list recommendation for Facebook events based on friends already attending the event.}
+    {2007–2009}
+    {Rue du Commerce}
+    {Software Engineer}
+    {As a member of the marketplace team, I worked as a Lead developer on the following fields :
+    \begin{itemize}
+    \item Payment processing (home-made payment server solution)
+    \item Order management (ala Google Checkout)
+    \item Billing account
+    \end{itemize}}
   \entry
-    {2011}
-    {Fellows}
-    {\href{http://fellows-exp.com}{fellows-exp.com}}
-    {Automatic community detection among Facebook Friends in order to validate the \emph{cohesion} measure, creation of friend lists.}
+    {2006–2007}
+    {Capgemini}
+    {Software Engineer}
+    {As a member of the Open Source departement I worked on:
+    \begin{itemize}
+    \item Prototypes for presale
+    \item Extranet for a french regional institution
+    \item End user documentation and installation manual for developers
+    \end{itemize}
+    Between two contracts I made some patches and bugfixes for Business to Business applications}
   \entry
-    {2008}
-    {Happy Flu}
-    {\href{http://happyflu.com}{happyflu.com}}
-    {Experiment aimed to measure viral spreading of content across the blogosphere.}
+    {2005–2006}
+    {Mobivillage}
+    {Software Engineer}
+    {\begin{itemize}
+    \item Built and deployed database-driven applications - like downloading platforms (products catalog listing, online shipment and payment, geolocalisation services)
+    \item Developed event-driven websites and mass SMS/text-messaging tool (based on Django) for some trademarks campaigns
+    \item Built a WAP game editor based on building blocks assembly. Released the game engine dealing with the scripts exported by the editor.
+    \end{itemize}}
+  \entry
+    {2004–2005}
+    {Newtgames}
+    {Software Engineer}
+    {Implemented bugfixes and improvements of web-3d client and geolocalisation engine used by \href{http://mogimogi.com}{MogiMogi} - a community collection game.}
 \end{entrylist}
 
-\section{publications}
+\clearpage
 
+\section{recommandations}
 
-\printbibsection{article}{article in peer-reviewed journal}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-\end{refsection}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-\end{refsection}
-\printbibsection{misc}{other publications}
-\printbibsection{report}{research reports}
+\begin{entrylist}
+  \entry
+    {Hyperweek}
+    {Raphaël Briner}
+    {Founder at HyperWeek}
+    {\emph{During 2.5 years, Sébastien was acting as a real co-founder, involved in crucial decisions, resolving complex issues for our roadmap, our services and our infrastructure. Thanks to his amazing work and involvement, HyperWeek succeeded to deliver on time, reduced support to maximum, improved its processes. Mastering accounting too.}}
+  \entry
+    {Hyperweek}
+    {Julien Mouille}
+    {Web Designer \& Developer}
+    {\emph{Having worked closely with Sébastien for more than 2 years at HyperWeek, I can say he's an expert of Python and the Django web framework, of which he was an early adopter. He's also got excellent DevOps skills. In a short period of time he greatly consolidated the web application stack and built a robust infrastructure which is now running dozens of clients' projects (most of them extensively using Amazon Web Services).
+    \\Sébastien is also a great team player and often raises interesting points which help make a better product. He definitely brings much more than technical expertise to a project.
+    \\I would warmly recommend him to anyone looking for an experimented and talented software developer or architect.}}
+  \entry
+    {Hyperweek}
+    {Nicolas Rakotomihamina}
+    {Web Application Developer}
+    {\emph{Sébastien is a skillful and passionate Engineer \& CTO. We worked together during 5 months on several features and projects at HyperWeek. Among all his responsibilities he provided the required services, infrastructure and back end development while I was providing front end development.
+    \\During that time, he proved to be incredibly helpful and knowledgable. He had a strong and decisive vision on architecture design with common development goals acknowledged by everyone. He has a strong sense of responsibility, will always looking to design the best solution and provides the best elegant code possible.
+    \\Upon his departure I temporarily inherited some of the responsibilities that were supported by Sébastien. Which gave me the opportunity to fully measure the quality and amount of work he provided during his work time at HyperWeek. He took several tough decisions which were vital for the good viability of the product and proved to be very helpful to allow anyone to do its work effectively.
+    \\I heartily recommend Sébastien and would be only too happy to work with him again.}}
+  \entry
+    {Rue du Commerce}
+    {Johann Evrard}
+    {Directeur E-Commerce et Digital}
+    {\emph{J'ai recruté Sébastien dans le cadre du développement de la Marketplace de RueDuCommerce. Je recherchais alors des Web Developpers capables de prendre à bras le corps des pans entiers du projet, et de travailler en totale autonomie dans un contexte Agile (ou chaotique, selon les points de vue...).
+    \\Tout au long de notre collaboration, Sébastien a démontré son ouverture d'esprit, sa créativité, son professionnalisme, et sa rigueur. Sébastien sait associer son penchant naturel pour la pointe de l'art, au pragmatisme que nous impose parfois la réalité du business.
+    \\Je recommande donc Sébastien sans réserve.}}
+\end{entrylist}
 
 \end{document}

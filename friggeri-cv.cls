@@ -17,15 +17,15 @@
 
 \definecolor{white}{RGB}{255,255,255}
 
-\definecolor{darkgray}{HTML}{333333}
-\definecolor{gray}{HTML}{4D4D4D}
-\definecolor{lightgray}{HTML}{999999}
+\definecolor{darkgray}{HTML}{34495E}
+\definecolor{gray}{HTML}{7F8C8D}
+\definecolor{lightgray}{HTML}{95A5A6}
 
-\definecolor{green}{HTML}{C2E15F}
-\definecolor{orange}{HTML}{FDA333}
-\definecolor{purple}{HTML}{D3A4F9}
-\definecolor{red}{HTML}{FB4485}
-\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{green}{HTML}{2ECC71}
+\definecolor{orange}{HTML}{E67E22}
+\definecolor{purple}{HTML}{9B59B6}
+\definecolor{red}{HTML}{E74C3C}
+\definecolor{blue}{HTML}{3498DB}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -36,7 +36,7 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
-  \colorlet{fillheader}{gray}
+  \colorlet{fillheader}{blue}
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
@@ -52,6 +52,7 @@
 \newfontfamily\bodyfont[]{Helvetica Neue}
 \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
 \newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily{\FA}{FontAwesome Regular}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
@@ -98,10 +99,10 @@
     \color{%
       \ifcase\value{colorCounter}%
         blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\else%
+        blue\or%
+        blue\or%
+        blue\or%
+        blue\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -158,7 +159,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{5.2}(0, 4.33)
   \begin{flushright}
   \obeycr
 }{%
