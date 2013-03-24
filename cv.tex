@@ -3,13 +3,6 @@
 \usepackage{fontspec}
 \usepackage{fontawesome}
 
-\def\home{{\FA \faHome}}
-\def\phone{{\FA \faPhone}}
-\def\inbox{{\FA \faEnvelope}}
-\def\linkedin{{\FA \faLinkedin}}
-\def\twitter{{\FA \faTwitter}}
-\def\github{{\FA \faGithub}}
-
 \begin{document}
 \header{Sébastien}{Fievet}
        {Senior Software Engineer}
@@ -18,20 +11,20 @@
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{about}
-    \home\ Ch. Fontaine, 4
+    {\FA \faHome} Ch. Fontaine, 4
     1260 Nyon
     Suisse
     ~
-    \phone\ +41 78 821 23 91
-    \inbox\ \href{mailto:sebastien.fievet@gmail.com}{sebastien.fievet@gmail.com}
+    {\FA \faPhone} +41 78 821 23 91
+    {\FA \faEnvelope} \href{mailto:sebastien.fievet@gmail.com}{sebastien.fievet@gmail.com}
     ~
-    \href{https://twitter.com/zyegfryed}{\twitter\ @zyegfryed}
-    \href{http://www.linkedin.com/in/sebastienfievet}{\linkedin\ sebastien.fievet}
-    \href{https://github.com/zyegfryed}{\github\ github:zyegfryed}
+    \href{https://twitter.com/zyegfryed}{{\FA \faTwitter} @zyegfryed}
+    \href{http://www.linkedin.com/in/sebastienfievet}{{\FA \faLinkedin} sebastien.fievet}
+    \href{https://github.com/zyegfryed}{{\FA \faGithub} github:zyegfryed}
   \section{languages}
-    mother tongue french
-    fluent english
-    notions spanish
+    \emph{mother} tongue french
+    \emph{fluent} english
+    \emph{notions} spanish
   \section{programming}
     {\color{red} $\varheartsuit$} Python
     (Django, Flask)
