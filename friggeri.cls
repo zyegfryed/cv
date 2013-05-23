@@ -1,4 +1,4 @@
-\ProvidesClass{friggeri-cv}[2012/04/30 CV class]
+\ProvidesClass{friggeri}[2012/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
 \DeclareOption{print}{\def\@cv@print{}}
@@ -17,15 +17,15 @@
 
 \definecolor{white}{RGB}{255,255,255}
 
-\definecolor{darkgray}{HTML}{34495E}
-\definecolor{gray}{HTML}{7F8C8D}
-\definecolor{lightgray}{HTML}{95A5A6}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{gray}{HTML}{4D4D4D}
+\definecolor{lightgray}{HTML}{999999}
 
-\definecolor{green}{HTML}{2ECC71}
-\definecolor{orange}{HTML}{E67E22}
-\definecolor{purple}{HTML}{9B59B6}
-\definecolor{red}{HTML}{E74C3C}
-\definecolor{blue}{HTML}{3498DB}
+\definecolor{green}{HTML}{C2E15F}
+\definecolor{orange}{HTML}{FDA333}
+\definecolor{purple}{HTML}{D3A4F9}
+\definecolor{red}{HTML}{FB4485}
+\definecolor{blue}{HTML}{6CE0F1}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -36,7 +36,7 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
-  \colorlet{fillheader}{blue}
+  \colorlet{fillheader}{gray}
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
@@ -99,10 +99,10 @@
     \color{%
       \ifcase\value{colorCounter}%
         blue\or%
-        blue\or%
-        blue\or%
-        blue\or%
-        blue\else%
+        red\or%
+        orange\or%
+        green\or%
+        purple\else%
         headercolor\fi%
     } #1#2#3%
   }%
