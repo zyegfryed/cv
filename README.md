@@ -24,3 +24,17 @@ To compile the print version only::
 Cleaning your working environment::
 
     make clean
+
+
+# Theming
+
+To use a different look'n'feel, just write a document class in the same
+directory than the ``cv.tex`` file. Then, set the ``CV_THEME`` environment
+variable to the theme file basename - the filename without the '*.cls'
+extension.
+
+For example, let's assume you've defined a ``mytheme.cls`` - you can start by
+copy/pasting the friggeri-cv.cls and modify what you need. Then, to use our
+theme we'll invoke the compilation command like so::
+
+    CV_THEME=my_theme make
