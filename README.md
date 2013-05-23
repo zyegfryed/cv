@@ -30,7 +30,7 @@ Cleaning your working environment:
 
 To use a different look'n'feel, just write a document class in the same
 directory than the ``cv.tex`` file. Then, set the ``CV_THEME`` environment
-variable to the theme file basename - the filename without the '*.cls'
+variable to the theme file basename - the filename without the ``*.cls``
 extension.
 
 For example, let's assume you've defined a ``mytheme.cls`` - you can start by
