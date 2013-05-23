@@ -34,7 +34,7 @@ variable to the theme file basename - the filename without the '*.cls'
 extension.
 
 For example, let's assume you've defined a ``mytheme.cls`` - you can start by
-copy/pasting the friggeri-cv.cls and modify what you need. Then, to use our
+copy/pasting the friggeri.cls and modify what you need. Then, to use our
 theme we'll invoke the compilation command like so::
 
     CV_THEME=my_theme make
