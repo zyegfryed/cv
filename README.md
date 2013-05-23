@@ -9,7 +9,7 @@ Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to 
 
 # Usage
 
-To compile both desktop and print versions::
+To compile both desktop and print versions:
 
     make
 
@@ -17,11 +17,11 @@ To compile the desktop version only:
 
     make screen
 
-To compile the print version only::
+To compile the print version only:
 
     make print
 
-Cleaning your working environment::
+Cleaning your working environment:
 
     make clean
 
@@ -35,6 +35,6 @@ extension.
 
 For example, let's assume you've defined a ``mytheme.cls`` - you can start by
 copy/pasting the friggeri.cls and modify what you need. Then, to use our
-theme we'll invoke the compilation command like so::
+theme we'll invoke the compilation command like so:
 
     CV_THEME=my_theme make
