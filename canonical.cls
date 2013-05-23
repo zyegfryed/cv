@@ -21,18 +21,11 @@
 \definecolor{gray}{HTML}{7F8C8D}
 \definecolor{lightgray}{HTML}{95A5A6}
 
-\definecolor{green}{HTML}{2ECC71}
-\definecolor{orange}{HTML}{E67E22}
 \definecolor{purple}{HTML}{5E2343}
-\definecolor{red}{HTML}{E74C3C}
-\definecolor{blue}{HTML}{3498DB}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
-  \colorlet{orange}{gray}
   \colorlet{purple}{gray}
-  \colorlet{red}{gray}
-  \colorlet{blue}{gray}
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
