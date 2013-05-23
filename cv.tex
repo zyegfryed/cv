@@ -7,30 +7,34 @@
 \header{Sébastien}{Fievet}
        {Senior Software Engineer}
 
-
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{about}
     {\FA \faUser} 32 years old
+    {\FA \faFlag} French
     ~
     {\FA \faHome} Ch. Fontaine, 4\\1260 Nyon CH
     {\FA \faPhone} +41 78 821 23 91
     {\FA \faEnvelope} \href{mailto:sebastien.fievet@gmail.com}{sebastien.fievet@gmail.com}
     ~
-    \href{https://twitter.com/zyegfryed}{{\FA \faTwitter} @zyegfryed}
-    \href{http://www.linkedin.com/in/sebastienfievet}{{\FA \faLinkedin} sebastien.fievet}
-    \href{https://github.com/zyegfryed}{{\FA \faGithub} github:zyegfryed}
+    \href{http://www.linkedin.com/in/sebastienfievet}{{\FA \faLinkedin} sebastienfievet}
+    ~
+    \href{https://twitter.com/zyegfryed}{{\FA \faTwitter} zyegfryed}
+    \href{https://github.com/zyegfryed}{{\FA \faGithub} zyegfryed}
+    \href{https://bitbucket.org/zyegfryed}{{\FA \faBeaker} zyegfryed}
+    \href{https://speakerdeck.com/zyegfryed}{{\FA \faBullhorn} zyegfryed}
   \section{languages}
     \emph{mother tongue} french
     \emph{fluent} english
     \emph{notions} spanish
   \section{programming}
     {\color{red} $\varheartsuit$} Python
-    (Django, Flask)
-    MySQL, PostgreSQL
-    Redis, Memcached
-    Nginx, Apache, Solr
-    Amazon AWS (EC2, S3)
+    Django, Flask
+    PostgreSQL, MySQL
+    Memcached, Redis, Solr
+    Nginx, Apache
+    Amazon AWS, Eucalyptus
+    Puppet, Salt, Bash
     Linux, Mac, Git
 \end{aside}
 
@@ -40,34 +44,29 @@ Python/DevOps/FOSS enthousiast \& hacker\\
 Swiss Django Meetup organizer\\
 Conference speaker
 
-\section{interests}
-
-open source, cloud computing, infrastructure, high availability\\
-snowboarding, gaming
-
 \section{education}
 
 \begin{entrylist}
   \entry
     {2003-2004}
     {Mastère Spécialisé}
-    {Institut Image, École Nationale Supérieure d'Arts et Métiers}
-    {3D computing, Virtual Reality}
+    {Institut Image, ENSAM}
+    {3D computing and Virtual Reality}
   \entry
     {2000–2003}
     {Master of Computer Science with honors}
     {Polytech Marseille}
-    {Specialization in Software Development and Image Computing}
+    {Specializing in Software Development and Image Computing}
   \entry
     {1998–2000}
     {Classes Préparatoires aux Grandes Écoles}
     {Lycée Frédéric Mistral, Avignon}
-    {Preparation for national competitive entrance exams to leading French ``grandes écoles'', specializing in physics and engineering science.}
+    {Preparation for national competitive entrance exams to leading French ``grandes écoles'', specializing in Physics and Engineering Science.}
   \entry
     {1998}
     {French Baccalauréat S. with honors}
     {Lycée Jean Monnet, Vitrolles}
-    {Specialization in mathematics}
+    {Specializing in Mathematics}
 \end{entrylist}
 
 \section{experience}
@@ -77,24 +76,34 @@ snowboarding, gaming
     {2012–2010}
     {Hyperweek, Geneva CH}
     {CTO}
-    {I was in charge of technical-related side from back-end development and architecture, to deployment and monitoring, via infrastructure design and technical strategy/decision:
+    {In charge of the technical-related side of the startup, including back-end development and architecture, deployment and monitoring, infrastructure design and technical strategy/decision.
     \begin{itemize}
-    \item Evolved from fork-based projects to a framework-based approach with reusable components/apps and pluggable customer project.
-    \item Enhanced infrastructure design and monitoring to handle customer scaling/hosting issue.
-    \item Built a python/puppet-based deployment tool to handle a SAAS-like strategy.
-    \item Developed and deployed dozens of tailored projects based on Hyperweek product.
+    \item Evolved from fork-based projects to a framework-based approach with reusable components/apps and pluggable customer project
+    \item Enhanced infrastructure design and monitoring to handle customer scaling/hosting issue
+    \item Built a python/puppet-based deployment tool to handle a SAAS-like strategy
+    \item Developed dozens of tailored Hyperweek-based projects
     \end{itemize}}
   \entry
     {2010-2009}
     {Salsadev, Geneva CH}
     {VP Product Development}
-    {Lead developer of:
+    {Lead developer of the following projects:
     \begin{itemize}
-    \item Jetpack-based feature built on top of the semantic platform leveraging a Wikipedia index;
-    \item prototypes/website front-end(/back-end)
+    \item Jetpack-based plugin built on top of the in-house semantic platform
+    \item Prototypes for presale
     \item Internal cloud-computing platform
     \item API Proxy application (ala Mashery)
     \item Adobe Air semantic application
+    \end{itemize}}
+  \entry
+    {2007–2009}
+    {Rue du Commerce, Aix-en-Provence FR}
+    {Software Engineer}
+    {As a member of the marketplace team, I worked as a Lead developer on the following fields:
+    \begin{itemize}
+    \item Payment processing
+    \item Order management
+    \item Billing accounting
     \end{itemize}}
 \end{entrylist}
 
@@ -102,16 +111,6 @@ snowboarding, gaming
 \clearpage
 
 \begin{entrylist}
-  \entry
-    {2007–2009}
-    {Rue du Commerce, Aix-en-Provence FR}
-    {Software Engineer}
-    {As a member of the marketplace team, I worked as a Lead developer on the following fields :
-    \begin{itemize}
-    \item Payment processing (home-made payment server solution)
-    \item Order management
-    \item Billing account
-    \end{itemize}}
   \entry
     {2006–2007}
     {Capgemini, Marseille FR}
@@ -122,24 +121,22 @@ snowboarding, gaming
     \item Extranet for a french regional institution
     \item End user documentation and installation manual for developers
     \end{itemize}
-    Between two contracts I made some patches and bugfixes for Business to Business applications}
+    Between two contracts I maintained critical B2B applications.}
   \entry
     {2005–2006}
     {Mobivillage, Marseille FR}
     {Software Engineer}
     {\begin{itemize}
-    \item Built and deployed database-driven applications - like downloading platforms (products catalog listing, online shipment and payment, geolocalisation services)
-    \item Developed event-driven websites and mass SMS/text-messaging tool (based on Django) for some trademarks campaigns
-    \item Built a WAP game editor based on building blocks assembly. Released the game engine dealing with the scripts exported by the editor.
+    \item Deployed database-driven applications - like downloading platforms (products catalog listing, online shipment and payment, geolocated services)
+    \item Developed event-driven websites and mass text-messaging tool for trademarks campaigns
+    \item Built a mobile-targeted game editor based on building blocks assembly (ala Virtools)
     \end{itemize}}
   \entry
     {2004–2005}
     {Newtgames, Marseille FR}
     {Software Engineer}
-    {Implemented bugfixes and improvements of web-3d client and geolocalisation engine used by \href{http://mogimogi.com}{MogiMogi} - a community collection game.}
+    {Maintained web-3d client and geolocation engine used by \href{http://mogimogi.com}{MogiMogi} - \href{http://thefeaturearchives.com/100501.html}{a location-based collecting game}. Game deployed in Japan and Spain.}
 \end{entrylist}
-
-\clearpage
 
 \section{recommandations}
 
@@ -153,24 +150,22 @@ snowboarding, gaming
     {Hyperweek}
     {Julien Mouille}
     {Web Designer \& Developer}
-    {\emph{Having worked closely with Sébastien for more than 2 years at HyperWeek, I can say he's an expert of Python and the Django web framework, of which he was an early adopter. He's also got excellent DevOps skills. In a short period of time he greatly consolidated the web application stack and built a robust infrastructure which is now running dozens of clients' projects (most of them extensively using Amazon Web Services).
-    \\Sébastien is also a great team player and often raises interesting points which help make a better product. He definitely brings much more than technical expertise to a project.
-    \\I would warmly recommend him to anyone looking for an experimented and talented software developer or architect.}}
-  \entry
-    {Hyperweek}
-    {Nicolas Rakotomihamina}
-    {Web Application Developer}
-    {\emph{Sébastien is a skillful and passionate Engineer \& CTO. We worked together during 5 months on several features and projects at HyperWeek. Among all his responsibilities he provided the required services, infrastructure and back end development while I was providing front end development.
-    \\During that time, he proved to be incredibly helpful and knowledgable. He had a strong and decisive vision on architecture design with common development goals acknowledged by everyone. He has a strong sense of responsibility, will always looking to design the best solution and provides the best elegant code possible.
-    \\Upon his departure I temporarily inherited some of the responsibilities that were supported by Sébastien. Which gave me the opportunity to fully measure the quality and amount of work he provided during his work time at HyperWeek. He took several tough decisions which were vital for the good viability of the product and proved to be very helpful to allow anyone to do its work effectively.
-    \\I heartily recommend Sébastien and would be only too happy to work with him again.}}
+    {\emph{Having worked closely with Sébastien for more than 2 years at HyperWeek, I can say he's an expert of Python and the Django web framework, of which he was an early adopter. He's also got excellent DevOps skills. In a short period of time he greatly consolidated the web application stack and built a robust infrastructure which is now running dozens of clients' projects (most of them extensively using Amazon Web Services).\\
+    Sébastien is also a great team player and often raises interesting points which help make a better product. He definitely brings much more than technical expertise to a project.\\
+    I would warmly recommend him to anyone looking for an experimented and talented software developer or architect.}}
   \entry
     {Rue du Commerce}
     {Johann Evrard}
     {Directeur E-Commerce et Digital}
-    {\emph{J'ai recruté Sébastien dans le cadre du développement de la Marketplace de RueDuCommerce. Je recherchais alors des Web Developpers capables de prendre à bras le corps des pans entiers du projet, et de travailler en totale autonomie dans un contexte Agile (ou chaotique, selon les points de vue...).
-    \\Tout au long de notre collaboration, Sébastien a démontré son ouverture d'esprit, sa créativité, son professionnalisme, et sa rigueur. Sébastien sait associer son penchant naturel pour la pointe de l'art, au pragmatisme que nous impose parfois la réalité du business.
-    \\Je recommande donc Sébastien sans réserve.}}
+    {\emph{J'ai recruté Sébastien dans le cadre du développement de la Marketplace de RueDuCommerce. Je recherchais alors des Web Developpers capables de prendre à bras le corps des pans entiers du projet, et de travailler en totale autonomie dans un contexte Agile.
+    Tout au long de notre collaboration, Sébastien a démontré son ouverture d'esprit, sa créativité, son professionnalisme, et sa rigueur. Sébastien sait associer son penchant naturel pour la pointe de l'art, au pragmatisme que nous impose parfois la réalité du business.\\
+    Je recommande donc Sébastien sans réserve.}}
 \end{entrylist}
+
+\section{out there}
+
+{\FA \faMapMarker} Born in {\emph Paris} {\bf FR}\\
+{\FA \faPlane} Grown up in {\emph Abidjan} {\bf CI} (10 years)\\
+{\FA \faPlane} Living in {\emph Nyon} {\bf CH} since 3 years
 
 \end{document}
