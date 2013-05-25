@@ -40,6 +40,7 @@
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
+\colorlet{notecolor}{lightgray}
 \colorlet{headercolor}{gray}
 
 %%%%%%%%%
@@ -131,6 +132,8 @@
 % List environment %
 %%%%%%%%%%%%%%%%%%%%
 
+\renewcommand{\labelitemi}{$-$}
+
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
@@ -139,12 +142,26 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
+  \textit{#1}&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=notecolor} #3}\\%
     #4\vspace{\parsep}%
   }\\}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% Quote environment %
+%%%%%%%%%%%%%%%%%%%%%
+
+\def\signed #1{{\leavevmode\unskip\nobreak\hfil\penalty50\hskip2em
+  \hbox{}\nobreak\hfil#1%
+  \parfillskip=0pt \finalhyphendemerits=0 \endgraf}}
+
+\newsavebox\mybox
+\newenvironment{quoting}[2]
+  {\savebox\mybox{{\bf #1} -- {\addfontfeature{Color=notecolor} #2}}\begin{quote}}
+  {\signed{\usebox\mybox}\end{quote}}
 
 
 %%%%%%%%%%%%%%

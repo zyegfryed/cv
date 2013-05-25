@@ -3,15 +3,6 @@
 \usepackage{fontspec}
 \usepackage{fontawesome}
 
-\def\signed #1{{\leavevmode\unskip\nobreak\hfil\penalty50\hskip2em
-  \hbox{}\nobreak\hfil#1%
-  \parfillskip=0pt \finalhyphendemerits=0 \endgraf}}
-
-\newsavebox\mybox
-\newenvironment{quoting}[1]
-  {\savebox\mybox{#1}\begin{quote}}
-  {\signed{\usebox\mybox}\end{quote}}
-
 \begin{document}
 \header{Sébastien}{Fievet}
        {Senior Software Engineer}
@@ -149,17 +140,17 @@ Conference speaker
 
 \section{recommandations}
 
-\begin{quoting}{ {\bf Raphaël Briner} -- Founder, {\emph Hyperweek} }
+\begin{quoting}{Raphaël Briner}{Founder, {\emph Hyperweek}}
 ``\textit{During 2.5 years, Sébastien was acting as a real co-founder, involved in crucial decisions, resolving complex issues for our roadmap, our services and our infrastructure. Thanks to his amazing work and involvement, HyperWeek succeeded to deliver on time, reduced support to maximum, improved its processes. Mastering accounting too.}''
 \end{quoting}
 
-\begin{quoting}{ {\bf Julien Mouille} -- Web Designer \& Developer, {\emph Hyperweek} }
+\begin{quoting}{Julien Mouille}{Web Designer \& Developer, {\emph Hyperweek}}
 ``\textit{Having worked closely with Sébastien for more than 2 years at HyperWeek, I can say he's an expert of Python and the Django web framework, of which he was an early adopter. He's also got excellent DevOps skills. In a short period of time he greatly consolidated the web application stack and built a robust infrastructure which is now running dozens of clients' projects (most of them extensively using Amazon Web Services).\\
 Sébastien is also a great team player and often raises interesting points which help make a better product. He definitely brings much more than technical expertise to a project.\\
 I would warmly recommend him to anyone looking for an experimented and talented software developer or architect.}''
 \end{quoting}
 
-\begin{quoting}{ {\bf Johann Evrard} -- Directeur E-Commerce et Digital, {\emph Rue du Commerce} }
+\begin{quoting}{Johann Evrard}{Directeur E-Commerce et Digital, {\emph Rue du Commerce}}
 ``\textit{J'ai recruté Sébastien dans le cadre du développement de la Marketplace de RueDuCommerce. Je recherchais alors des Web Developpers capables de prendre à bras le corps des pans entiers du projet, et de travailler en totale autonomie dans un contexte Agile.
 Tout au long de notre collaboration, Sébastien a démontré son ouverture d'esprit, sa créativité, son professionnalisme, et sa rigueur. Sébastien sait associer son penchant naturel pour la pointe de l'art, au pragmatisme que nous impose parfois la réalité du business.\\
 Je recommande donc Sébastien sans réserve.}''
