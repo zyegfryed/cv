@@ -46,7 +46,7 @@
 \newfontfamily\bodyfont[]{Ubuntu}
 \newfontfamily\thinfont[]{Ubuntu Light}
 \newfontfamily\headingfont[]{Ubuntu Bold}
-\newfontfamily{\FA}{FontAwesome Regular}
+\newfontfamily{\FA}{FontAwesome}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Ubuntu}
