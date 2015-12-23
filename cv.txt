@@ -1,0 +1,218 @@
+===========================================
+Sébastien Fievet – Senior Software Engineer
+===========================================
+
+About
+=====
+
+34 years old
+French
+Ch. Fontaine, 4 – 1260 Nyon CH
++41 78 821 23 91
+hi@sebastien-fievet.fr
+
+Languages
+=========
+
+*mother tongue* french
+*fluent* english
+*notions* spanish
+
+Programming
+===========
+
+Python, Clojure, Go
+Django, Flask
+PostgreSQL, MySQL, NoSQL
+Cassandra, Redis, Memcached
+Elasticsearch, Solr
+Nginx, Apache
+Amazon AWS, Eucalyptus
+Chef, Puppet, Salt, Bash
+Linux, Mac, Git
+
+Elsewhere
+=========
+
+Twitter: zyegfryed (https://twitter.com/zyegfryed)
+Github: zyegfryed (https://github.com/zyegfryed)
+Bitbucket: zyegfryed (https://bitbucket.org/zyegfryed)
+Speakerdeck: zyegfryed (https://speakerdeck.com/zyegfryed)
+LinkedIn: sebastienfievet (http://www.linkedin.com/in/sebastienfievet)
+
+Summary
+=======
+
+Python/DevOps/FOSS enthousiast & hacker
+Meetup organizer & Conference speaker
+
+Experience
+==========
+
+Shoreware, Geneva CH – Software/System Engineer [2014-Present]
+--------------------------------------------------------------
+
+Managing operations and systems
+
+SixSq, Geneva CH – Software Engineer [2013-2014]
+------------------------------------------------
+
+Worked on python-related projects:
+
+* video server API binding for
+
+* metering system (client and server) for
+  [SlipStream](http://sixsq.com/products/slipstream.html)
+
+World Intellectual Property Organization (WIPO), Geneva CH – Software Engineer [2013]
+-------------------------------------------------------------------------------------
+
+Enhanced publishing applications for patent classification(NICE, IPC and
+CPC).
+
+Hyperweek, Geneva CH – CTO [2010-2012]
+--------------------------------------
+
+In charge of the technical-related side of the startup, including back-end
+development and architecture, deployment and monitoring, infrastructure
+design and technical strategy/decision.
+
+* Evolved from fork-based projects to a framework-based approach with
+  reusable components/apps and pluggable customer project
+
+* Enhanced infrastructure design and monitoring to handle customer
+  scaling/hosting issue
+
+* Built a python/puppet-based deployment tool to handle a SaaS-like
+  strategy
+
+* Developed dozens of tailored Hyperweek-based projects
+
+Salsadev, Geneva CH – VP Product Development [2009-2010]
+--------------------------------------------------------
+
+Lead developer of the following projects:
+
+* Jetpack-based plugin built on top of the in-house semantic platform
+
+* Prototypes for presale
+
+* Internal cloud-computing platform
+
+* API Proxy application (ala Mashery)
+
+* Adobe Air semantic application
+
+Rue du Commerce, Aix-en-Provence FR – Software Engineer [2007-2009]
+-------------------------------------------------------------------
+
+As a member of the marketplace team, I worked as a Lead developer on the
+following fields:
+
+* Payment processing
+
+* Order management
+
+* Billing accounting
+
+Capgemini, Marseille FR – Software Engineer [2006-2007]
+-------------------------------------------------------
+
+As a member of the Open Source departement I worked on:
+
+* Prototypes for presale
+
+* Extranet for a french regional institution
+
+* End user documentation and installation manual for developers
+
+Between contracts I maintained critical (billing) B2B applications.
+
+Mobivillage, Marseille FR – Software Engineer [2005-2006]
+---------------------------------------------------------
+
+Worked on custom projects like:
+
+* database-driven applications - like downloading platforms (products
+  catalog listing, online shipment and payment, geolocated services)
+
+* event-driven websites and mass text-messaging tool for trademarks
+  campaigns
+
+* a mobile-targeted game editor based on building blocks assembly (ala
+  Virtools)
+
+Newtgames, Marseille FR – Software Engineer [2004-2005]
+-------------------------------------------------------
+
+Maintained web-3d client and geolocation engine used by
+[MogiMogi](http://mogimogi.com) - [a location-based collecting
+game](http://thefeaturearchives.com/100501.html). Game deployed in Japan
+and Spain.
+
+Education
+=========
+
+Mastère Spécialisé Institut Image with honors – ENSAM
+3D computing and Virtual Reality
+
+Master of Computer Science with honors – Polytech Marseille
+Specializing in Software Development and Image Computing
+
+Classes Préparatoires aux Grandes Écoles – Lycée Frédéric Mistral, Avignon
+Preparation for national competitive entrance exams to leading French
+“grandes écoles”, specializing in Physics and Engineering Science.
+
+French Baccalauréat S. with honors – Lycée Jean Monnet, Vitrolles
+Specializing in Mathematics
+
+Out there
+=========
+
+Born in Paris FR
+Grown up in Abidjan CI (10 years)
+Living in Nyon CH since 6 years
+
+Recommandations
+===============
+
+Raphaël Briner – Founder, Hyperweek
+
+"During 2.5 years, Sébastien was acting as a real co-founder, involved in
+crucial decisions, resolving complex issues for our roadmap, our services
+and our infrastructure.  Thanks to his amazing work and involvement,
+HyperWeek succeeded to deliver on time, reduced support to maximum,
+improved its processes.  Mastering accounting too."
+
+Julien Mouille – Web Designer & Developer, Hyperweek
+
+"Having worked closely with Sébastien for more than 2 years at HyperWeek,
+I can say he’s an expert of Python and the Django web framework, of which
+he was an early adopter.  He’s also got excellent DevOps skills.  In
+a short period of time he greatly consolidated the web application stack
+and built a robust infrastructure which is now running dozens of clients’
+projects (most of them extensively using Amazon Web Services).  Sébastien
+is also a great team player and often raises interesting points which help
+make a better product. He definitely brings much more than technical
+expertise to a project.  I would warmly recommend him to anyone looking
+for an experimented and talented software developer or architect."
+
+Johann Evrard – Directeur E-Commerce et Digital, Rue du Commerce
+
+"J’ai recruté Sébastien dans le cadre du développement de la Marketplace
+de RueDuCommerce.  Je recherchais alors des Web Developpers capables de
+prendre à bras le corps des pans entiers du projet, et de travailler en
+totale autonomie dans un contexte Agile. Tout au long de notre
+collaboration, Sébastien a démontré son ouverture d’esprit, sa créativité,
+son professionnalisme, et sa rigueur.  Sébastien sait associer son
+penchant naturel pour la pointe de l’art, au pragmatisme que nous impose
+parfois la réalité du business.  Je recommande donc Sébastien sans
+réserve."
+
+Caroline Baeyaert – Responsable éditorial Web, Rue du Commerce
+
+"J’ai travaillé avec Sébastien lorsque j’étais chef de projet fonctionnel
+chez RueDuCommerce.  Sébastien est efficace, minutieux et passionné.  Il
+fait preuve de créativité et de pragmatisme, trouve des solutions rapides
+aux problèmes complexes et ne perd jamais de vue la vision business.  Je
+recommande Sébastien les yeux fermés."
