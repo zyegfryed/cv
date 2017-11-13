@@ -79,7 +79,7 @@
       \fontsize{40pt}{72pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
     };
-    \node [anchor=north] (title) at (name.south) {%
+    \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%
       \thinfont #3%
     };
