@@ -5,8 +5,8 @@
 About
 =====
 
-36 years old
 French
+C Work Permit
 Bvd. de la Cluse, 21 – 1205 Genève CH
 +41 78 821 23 91
 hi@sebastien-fievet.fr
@@ -16,7 +16,6 @@ Languages
 
 *mother tongue* french
 *fluent* english
-*notions* spanish, german
 
 Programming
 ===========
@@ -50,15 +49,32 @@ Meetup organizer & Conference speaker
 Experience
 ==========
 
-Finity, Geneva CH – Software/System Engineer [2016-present]
------------------------------------------------------------
+Finity, Geneva CH – Software/System Engineer [2016-2018]
+--------------------------------------------------------
 
-Managing operations and systems, and developing chatbots with AI.
+Developing chatbots with AI and managing overall company infrastructure.
+
+* Developped webhook-based applications leveraging real-time API
+
+* Trained specific model to detect and answer user queries (Wit, Rasa,
+  DialogFlow)
+
+* Developed web-based UI components leveraging Quasar framework to display
+  rich user/bot interactions (inspired and compatible with Messenger SDK)
 
 Shoreware, Geneva CH – Software/System Engineer [2014-2016]
 -----------------------------------------------------------
 
-Managing operations and systems.
+Managing operations and systems while developing internal tooling to speedup
+ and simplify application development and deployment.
+
+* Evolved to fast, reliable, idempotent deployments
+
+* Built a web-based interface (ala Ansible Tower) to automatically
+  provision and configure customer instances
+
+* Moved to fully monitored platform with metrics/error aggregation and
+  CI/CD support with packaging
 
 SixSq, Geneva CH – Software Engineer [2013-2014]
 ------------------------------------------------
@@ -176,8 +192,8 @@ Out there
 =========
 
 Born in Paris FR
-Grown up in Abidjan CI (10 years)
-Living in Genève CH since 8 years
+Grew up in Abidjan CI (10 years)
+Living in Genève CH since 9 years
 
 Recommandations
 ===============

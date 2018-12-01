@@ -3,7 +3,7 @@
 \usepackage[nolist]{acronym}
 \usepackage{fontspec}
 \defaultfontfeatures{
-    Path = /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/fontawesome/ }
+    Path = /usr/local/texlive/2018basic/texmf-dist/fonts/opentype/public/fontawesome/ }
 \usepackage{fontawesome}
 
 \begin{document}
@@ -11,27 +11,32 @@
 
 \begin{acronym}
 \acro{AI}{Artificial Intelligence}
+\acro{API}{Application Programming Interface}
 \acro{AWS}{Amazon Web Services}
-\acro{WIPO}{World Intellectual Property Organization}
+\acro{CI}{Continuous Integration}
+\acro{CD}{Continuous Development}
+\acro{CTO}{Chief Technology Officer}
 \acro{EBU}{European Broadcasting Union}
+\acro{FOSS}{Free and Open-Source Software}
+\acro{SDK}{SOftwrae Development Kit}
+\acro{WIPO}{World Intellectual Property Organization}
 \end{acronym}
 
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{about}
-    36 years old
     French
+    C Work permit
     ~
     {\FA \faHome} Bvd. de la Cluse, 21\\1205 Genève CH
     {\FA \faPhone} +41 78 821 23 91
-    \href{skype:sebastienfievet?call}{{\FA \faSkype} sebastien.fievet}
+    \href{skype:sebastienfievet?call}{{\FAB \faSkype} sebastien.fievet}
     {\FA \faEnvelope} \href{mailto:hi@sebastien-fievet.fr}{hi@sebastien-fievet.fr}
   \section{languages}
     \emph{mother tongue} french
     \emph{fluent} english
-    \emph{notions} spanish, german
   \section{programming}
-    {\color{red} $\varheartsuit$} Python, Clojure, Go, Erlang
+    {\color{red} {\FA \faHeart}} Python, Clojure, Go, Erlang
     Flask, Django
     Javascript (ES2015), Vuejs
     PostgreSQL, MySQL, NoSQL
@@ -42,32 +47,47 @@
     Ansible, Puppet, Salt, Bash
     Linux, Mac, Git
   \section{elsewhere}
-    \href{https://twitter.com/zyegfryed}{{\FA \faTwitter} zyegfryed}
-    \href{https://github.com/zyegfryed}{{\FA \faGithub} zyegfryed}
-    \href{https://bitbucket.org/zyegfryed}{{\FA \faBitbucket} zyegfryed}
+    \href{https://twitter.com/zyegfryed}{{\FAB \faTwitter} zyegfryed}
+    \href{https://github.com/zyegfryed}{{\FAB \faGithub} zyegfryed}
+    \href{https://bitbucket.org/zyegfryed}{{\FAB \faBitbucket} zyegfryed}
     \href{https://speakerdeck.com/zyegfryed}{{\FA \faBullhorn} zyegfryed}
-    \href{http://www.linkedin.com/in/sebastienfievet}{{\FA \faLinkedin} sebastienfievet}
+    \href{http://www.linkedin.com/in/sebastienfievet}{{\FAB \faLinkedin} sebastienfievet}
 \end{aside}
 
 \section{summary}
 
-Python/DevOps/FOSS enthousiast \& hacker\\
+Python/DevOps/\ac{FOSS} enthousiast \& hacker\\
 Meetup organizer \& Conference speaker
 
 \section{experience}
 
 \begin{entrylist}
   \entry
-    {2016-present}
+    {2016-2018}
     {Finity, Geneva CH}
     {Software/System Engineer}
-    {Developing chatbots with AI and managing overall company infrastructure.}
+    {Developing chatbots with \ac{AI} and managing overall company infrastructure.
+    \begin{itemize}
+    \item Developped webhook-based applications leveraging real-time \ac{API}
+    \item Trained specific model to detect and answer user queries
+        (Wit, Rasa, DialogFlow)
+    \item Developed web-based UI components leveraging Quasar framework to display
+        rich user/bot interactions (inspired and compatible with
+        Messenger \ac{SDK})
+    \end{itemize}}
   \entry
     {2014-2016}
     {Shoreware, Geneva CH}
     {Software/System Engineer}
     {Managing operations and systems while developing internal tooling to speedup
-     and simplify application development and deployment.}
+     and simplify application development and deployment.
+    \begin{itemize}
+    \item Evolved to fast, reliable, idempotent deployments
+    \item Built a web-based interface (ala Ansible Tower) to automatically
+        provision and configure customer instances
+    \item Moved to fully monitored platform with metrics/error aggregation
+        and CI/CD support with packaging
+    \end{itemize}}
   \entry
     {2013-2014}
     {SixSq, Geneva CH}
@@ -87,7 +107,7 @@ Meetup organizer \& Conference speaker
   \entry
     {2010-2012}
     {Hyperweek, Geneva CH}
-    {CTO}
+    {\ac{CTO}}
     {In charge of the technical-related side of the startup, including
     back-end development and architecture, deployment and monitoring,
     infrastructure design and technical strategy/decision.
@@ -100,6 +120,12 @@ Meetup organizer \& Conference speaker
     strategy
     \item Developed dozens of tailored Hyperweek-based projects
     \end{itemize}}
+\end{entrylist}
+
+% FIX: Ugly hack to break page on entrylist
+\clearpage
+
+\begin{entrylist}
   \entry
     {2009-2010}
     {Salsadev, Geneva CH}
@@ -123,12 +149,6 @@ Meetup organizer \& Conference speaker
     \item Order management
     \item Billing accounting
     \end{itemize}}
-\end{entrylist}
-
-% FIX: Ugly hack to break page on entrylist
-\clearpage
-
-\begin{entrylist}
   \entry
     {2006–2007}
     {Capgemini, Marseille FR}
@@ -190,9 +210,9 @@ Meetup organizer \& Conference speaker
 
 \section{out there}
 
-{\FA \faMapMarker} Born in {\emph Paris} {\bf FR}\\
-{\FA \faPlane} Grown up in {\emph Abidjan} {\bf CI} (10 years)\\
-{\FA \faPlane} Living in {\emph Genève} {\bf CH} since 8 years
+{\FA \faMapPin} Born in {\emph Paris} {\bf FR}\\
+{\FA \faPlane} Grew up in {\emph Abidjan} {\bf CI} (10 years)\\
+{\FA \faPlane} Living in {\emph Genève} {\bf CH} since 9 years
 
 \clearpage
 

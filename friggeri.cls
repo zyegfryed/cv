@@ -48,17 +48,15 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont[]{Helvetica Neue}
 \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
 \newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
-\newfontfamily{\FA}{FontAwesome}
+\newfontfamily{\FA}{Font Awesome 5 Free Solid}
+\newfontfamily{\FAB}{Font Awesome 5 Brands}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
-
-\setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
