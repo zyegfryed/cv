@@ -1,87 +1,90 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri}
 \usepackage[nolist]{acronym}
+\usepackage{dirtytalk}
 \usepackage{fontspec}
-\defaultfontfeatures{
-    Path = /usr/local/texlive/2018basic/texmf-dist/fonts/opentype/public/fontawesome/ }
 \usepackage{fontawesome}
 
 \begin{document}
 \header{Sébastien~}{Fievet}{Software/System Engineer}
 
-\begin{acronym}
-\acro{AI}{Artificial Intelligence}
-\acro{API}{Application Programming Interface}
-\acro{AWS}{Amazon Web Services}
-\acro{CI}{Continuous Integration}
-\acro{CD}{Continuous Development}
-\acro{CTO}{Chief Technology Officer}
-\acro{EBU}{European Broadcasting Union}
-\acro{FOSS}{Free and Open-Source Software}
-\acro{SDK}{SOftwrae Development Kit}
-\acro{WIPO}{World Intellectual Property Organization}
-\end{acronym}
-
 % In the aside, each new line forces a line break
 \begin{aside}
   \section{about}
-    French
-    C Work permit
+    French/Swiss
+    Driving license/Bike commuter
+    Proud father of one
     ~
-    {\FA \faHome} Bvd. de la Cluse, 21\\1205 Genève CH
+    {\FA \faHome} Route du Jorat 196b\\1000 Lausanne 26 CH
     {\FA \faPhone} +41 78 821 23 91
-    \href{skype:sebastienfievet?call}{{\FAB \faSkype} sebastien.fievet}
-    {\FA \faEnvelope} \href{mailto:hi@sebastien-fievet.fr}{hi@sebastien-fievet.fr}
+    {\FA \faEnvelope} \href{mailto:contact@sebastien-fievet.net}{contact@sebastien-fievet.net}
   \section{languages}
-    \emph{mother tongue} french
-    \emph{fluent} english
+    \emph{mother tongue} French
+    \emph{fluent} English
   \section{programming}
-    {\color{red} {\FA \faHeart}} Python, Clojure, Go, Erlang
-    Flask, Django
-    Javascript (ES2015), Vuejs
-    PostgreSQL, MySQL, NoSQL
+    {\color{red} {\FA \faHeart}} Python, Clojure
+    PostgreSQL, MySQL/MariaDB
     Redis, Memcached
-    Elasticsearch, Solr
-    Nginx, Apache
-    DigitalOcean, Exoscale, AWS
-    Ansible, Puppet, Salt, Bash
-    Linux, Mac, Git
+    Kafka, KafkaStreams
+    Kubernetes, ArgoCD, Docker/OCI
+    Exoscale, DigitalOcean, \ac{AWS}
+    Ansible, Puppet, Zsh/Bash
+    Linux, macOS, Git, Vim
   \section{elsewhere}
-    \href{https://twitter.com/zyegfryed}{{\FAB \faTwitter} zyegfryed}
+    \href{https://hachyderm.io/@zyegfryed}{{\FAB \faMastodon} zyegfryed}
     \href{https://github.com/zyegfryed}{{\FAB \faGithub} zyegfryed}
     \href{https://bitbucket.org/zyegfryed}{{\FAB \faBitbucket} zyegfryed}
     \href{https://speakerdeck.com/zyegfryed}{{\FA \faBullhorn} zyegfryed}
-    \href{http://www.linkedin.com/in/sebastienfievet}{{\FAB \faLinkedin} sebastienfievet}
+    \href{https://www.linkedin.com/in/zyegfryed}{{\FAB \faLinkedin} zyegfryed}
 \end{aside}
 
 \section{summary}
 
-Python/DevOps/\ac{FOSS} enthousiast \& hacker\\
-Meetup organizer \& Conference speaker
+Seasoned and tech-savvy DevOps engineer with 20+ years of experience in various fields\\
+\ac{FOSS} enthusiast and contributor\\
+Former Meetup organizer \& Conference speaker
 
 \section{experience}
 
 \begin{entrylist}
   \entry
-    {2019-}
-    {KiWi, Lausanne CH}
+    {2020-…}
+    {Exoscale/Akenes SA, Lausanne CH}
+    {Software/System Engineer}
+    {Main achievements:
+    \begin{itemize}
+    \item Lead and tackled the transition of Account Lifecycle Management
+        applications (Account, Billing, Ticketing) from package-based
+        deployment to fully embrace Cloud Native approach (container,
+        Kubernetes)
+    \item Lead and designed a complete rewrite of the metering application
+        computing Exoscale platform usage focusing on accuracy and scalability
+    \item Maintained and improved Exoscale's internal and managed offering of
+        Kubernetes (\ac{SKS})
+    \end{itemize}}
+  \entry
+    {2019-2020}
+    {KiWi/eBOP SA, Lausanne CH}
     {Software Engineer/Engineer Manager}
-    {As a lead backend engineer, I'm managing a remote team based in Mexico focusing
-     on bringing better visibility and higher velocity for an improved reliability
-     of the overall platform. Regarding some achievements, over only few months,
-     we sucessfully upgraded all the key components of our stack to latest major
-     releases – Python 2.7 to 3.7, Django 1.11 to 2.2, PostgreSQL 9.6 to 11, with
-     barely any downtime and no impact on the business.}
+    {As Lead Backend Engineer, I managed a remote team based in Mexico City, MX
+    focusing on visibility and velocity for improved reliability of the
+    overall platform. Within only few months, we successfully upgraded all the
+    key components of our stack to latest major releases – Python 2.7 to 3.7,
+    Django 1.11 to 2.2, PostgreSQL 9.6 to 11, with close to zero downtime and no
+    impact on the business.}
   \entry
     {2017-2019}
     {Finity, Geneva CH}
     {Software/System Engineer}
-    {Developing chatbots with \ac{AI} and managing overall company infrastructure.
+    {Developed \ac{AI}-powered chatbots and managed overall company infrastructure.
     \begin{itemize}
-    \item Developped webhook-based applications leveraging real-time \ac{API}
-    \item Trained specific model to detect and answer user queries
-        (Wit, Rasa, DialogFlow)
-    \item Developed web-based UI components leveraging Quasar framework to display
+    \item Developed webhook-based applications leveraging real-time \ac{API}
+    \item Trained specific models to detect and answer user queries with
+        \href{https://wit.ai}{Wit},
+        \href{https://rasa.com/}{Rasa} and
+        \href{https://cloud.google.com/products/conversational-agents}{DialogFlow}
+    \item Developed web-based \ac{UI} components leveraging
+        \href{https://quasar.dev/}{Quasar framework} to display
         rich user/bot interactions (inspired and compatible with
         Messenger \ac{SDK})
     \end{itemize}}
@@ -92,17 +95,23 @@ Meetup organizer \& Conference speaker
     {Managing operations and systems while developing internal tooling to speedup
      and simplify application development and deployment.
     \begin{itemize}
-    \item Evolved to fast, reliable, idempotent deployments
+    \item Transitioned to fast, reliable, idempotent deployments
     \item Built a web-based interface (ala Ansible Tower) to automatically
         provision and configure customer instances
     \item Moved to fully monitored platform with metrics/error aggregation
-        and CI/CD support with packaging
+        and \ac{CI}/\ac{CD} support with packaging
     \end{itemize}}
+\end{entrylist}
+
+% FIX: Ugly hack to break page on entrylist
+\clearpage
+
+\begin{entrylist}
   \entry
     {2013-2014}
     {SixSq, Geneva CH}
     {Software Engineer}
-    {Worked on python-related projects:
+    {Worked on Python-powered projects:
     \begin{itemize}
     \item video server API binding for \ac{EBU}
     \item metering system (client and server) for
@@ -112,27 +121,23 @@ Meetup organizer \& Conference speaker
     {2013}
     {\ac{WIPO}, Geneva CH}
     {Software Engineer}
-    {Enhanced publishing applications for patent classification(NICE, IPC
-    and CPC).}
-\end{entrylist}
-
-% FIX: Ugly hack to break page on entrylist
-\clearpage
-
-\begin{entrylist}
+    {Improved publishing applications for patent classifications
+    (\href{https://www.wipo.int/classifications/nice/en/}{NICE},
+    \href{https://www.wipo.int/classifications/ipc/en/}{IPC} and
+    \href{https://www.cooperativepatentclassification.org/home}{CPC}).}
   \entry
     {2010-2012}
     {Hyperweek, Geneva CH}
     {\ac{CTO}}
-    {In charge of the technical-related side of the startup, including
-    back-end development and architecture, deployment and monitoring,
+    {In charge of the technical side of the startup, including
+    backend development and architecture, deployment and monitoring,
     infrastructure design and technical strategy/decision.
     \begin{itemize}
     \item Evolved from fork-based projects to a framework-based approach with
     reusable components/apps and pluggable customer project
     \item Enhanced infrastructure design and monitoring to handle customer
     scaling/hosting issue
-    \item Built a python/puppet-based deployment tool to handle a SaaS-like
+    \item Built a Python/Puppet-based deployment tool to handle a SaaS-like
     strategy
     \item Developed dozens of tailored Hyperweek-based projects
     \end{itemize}}
@@ -142,17 +147,19 @@ Meetup organizer \& Conference speaker
     {VP Product Development}
     {Lead developer of the following projects:
     \begin{itemize}
-    \item Jetpack-based plugin built on top of the in-house semantic platform
+    \item Browser (\href{https://en.wikipedia.org/wiki/Jetpack_(Firefox_project)}{Jetpack})
+        plugin leveraging the in-house semantic platform
     \item Prototypes for presale
-    \item Internal cloud-computing platform
-    \item API Proxy application (ala Mashery)
-    \item Adobe Air semantic application
+    \item Internal cloud-computing platform powered by
+        \href{https://github.com/eucalyptus/eucalyptus}{Eucalyptus Cloud}
+    \item \ac{API} Proxy application (ala Mashery)
+    \item Adobe Air-powered semantic application
     \end{itemize}}
   \entry
     {2007–2009}
     {Rue du Commerce, Aix-en-Provence FR}
     {Software Engineer}
-    {As a member of the marketplace team, I worked as a Lead developer on the
+    {As a member of the marketplace team, I worked as Lead Developer on the
     following fields:
     \begin{itemize}
     \item Payment processing
@@ -163,7 +170,7 @@ Meetup organizer \& Conference speaker
     {2006–2007}
     {Capgemini, Marseille FR}
     {Software Engineer}
-    {As a member of the Open Source departement I worked on:
+    {As a member of the Open Source department I worked on:
     \begin{itemize}
     \item Prototypes for presale
     \item Extranet for a french regional institution
@@ -187,8 +194,8 @@ Meetup organizer \& Conference speaker
     {2004–2005}
     {Newtgames, Marseille FR}
     {Software Engineer}
-    {Maintained web-3d client and geolocation engine used by
-    \href{http://mogimogi.com}{MogiMogi} - \href{http://thefeaturearchives.com/100501.html}{a location-based collecting game}.
+    {Maintained web-3d client and geolocation engine powering
+    \href{http://mogimogi.com}{MogiMogi} - \href{https://links.net/share/write/thefeature/Mogi__Second_Generation_Location-Based_Gaming.html}{a location-based collecting game}.
     Game deployed in Japan and Spain.}
 \end{entrylist}
 
@@ -199,7 +206,7 @@ Meetup organizer \& Conference speaker
 \begin{entrylist}
   \entry
     {2003-2004}
-    {Mastère Spécialisé}
+    {\href{https://en.wikipedia.org/wiki/Mast\%C3\%A8re_sp\%C3\%A9cialis\%C3\%A9}{Mastère Spécialisé}}
     {Institut Image, ENSAM}
     {3D computing and Virtual Reality}
   \entry
@@ -209,13 +216,13 @@ Meetup organizer \& Conference speaker
     {Specializing in Software Development and Image Computing}
   \entry
     {1998–2000}
-    {Classes Préparatoires aux Grandes Écoles}
+    {\href{https://en.wikipedia.org/wiki/Classe_pr\%C3\%A9paratoire_aux_grandes_\%C3\%A9coles}{Classes Préparatoires aux Grandes Écoles}}
     {Lycée Frédéric Mistral, Avignon}
     {Preparation for national competitive entrance exams to leading French
-    ``grandes écoles'', specializing in Physics and Engineering Science.}
+    “grandes écoles”, specializing in Physics and Engineering Science}
   \entry
     {1998}
-    {French Baccalauréat S. with honors}
+    {\href{https://en.wikipedia.org/wiki/Baccalaur\%C3\%A9at}{Baccalauréat} in Science with honors}
     {Lycée Jean Monnet, Vitrolles}
     {Specializing in Mathematics}
 \end{entrylist}
@@ -224,22 +231,22 @@ Meetup organizer \& Conference speaker
 
 {\FA \faMapPin} Born in {\emph Paris} {\bf FR}\\
 {\FA \faPlane} Grew up in {\emph Abidjan} {\bf CI} (10 years)\\
-{\FA \faPlane} Living in {\emph Genève} {\bf CH} since 10 years
+{\FA \faPlane} Living in {\emph Lausanne} {\bf CH} since 15 years
 
 \clearpage
 
-\section{recommandations}
+\section{recommendations}
 
 \begin{quoting}{Raphaël Briner}{Founder, {\emph Hyperweek}}
-``\textit{During 2.5 years, Sébastien was acting as a real co-founder,
+\say{During 2.5 years, Sébastien was acting as a real co-founder,
 involved in crucial decisions, resolving complex issues for our roadmap, our
 services and our infrastructure. Thanks to his amazing work and involvement,
 HyperWeek succeeded to deliver on time, reduced support to maximum, improved
-its processes. Mastering accounting too.}''
+its processes. Mastering accounting too.}
 \end{quoting}
 
 \begin{quoting}{Julien Mouille}{Web Designer \& Developer, {\emph Hyperweek}}
-``\textit{Having worked closely with Sébastien for more than 2 years at
+\say{Having worked closely with Sébastien for more than 2 years at
 HyperWeek, I can say he's an expert of Python and the Django web framework, of
 which he was an early adopter. He's also got excellent DevOps skills. In a
 short period of time he greatly consolidated the web application stack and
@@ -249,11 +256,11 @@ Sébastien is also a great team player and often raises interesting points
 which help make a better product. He definitely brings much more than
 technical expertise to a project.\\
 I would warmly recommend him to anyone looking for an experimented and
-talented software developer or architect.}''
+talented software developer or architect.}
 \end{quoting}
 
 \begin{quoting}{Johann Evrard}{Directeur E-Commerce et Digital, {\emph Rue du Commerce}}
-``\textit{J'ai recruté Sébastien dans le cadre du développement de la
+\say{J'ai recruté Sébastien dans le cadre du développement de la
 Marketplace de RueDuCommerce. Je recherchais alors des Web Developpers
 capables de prendre à bras le corps des pans entiers du projet, et de
 travailler en totale autonomie dans un contexte Agile.
@@ -261,15 +268,30 @@ Tout au long de notre collaboration, Sébastien a démontré son ouverture
 d'esprit, sa créativité, son professionnalisme, et sa rigueur. Sébastien sait
 associer son penchant naturel pour la pointe de l'art, au pragmatisme que nous
 impose parfois la réalité du business.\\
-Je recommande donc Sébastien sans réserve.}''
+Je recommande donc Sébastien sans réserve.}
 \end{quoting}
 
 \begin{quoting}{Caroline Baeyaert}{Responsable éditorial Web, {\emph Rue du Commerce}}
-``\textit{J'ai travaillé avec Sébastien lorsque j'étais chef de projet fonctionnel
+\say{J'ai travaillé avec Sébastien lorsque j'étais chef de projet fonctionnel
 chez RueDuCommerce. Sébastien est efficace, minutieux et passionné. Il fait
 preuve de créativité et de pragmatisme, trouve des solutions rapides aux
 problèmes complexes et ne perd jamais de vue la vision business.\\
-Je recommande Sébastien les yeux fermés.}''
+Je recommande Sébastien les yeux fermés.}
 \end{quoting}
+
+\begin{acronym}
+    \acro{AI}{Artificial Intelligence}
+    \acro{API}{Application Programming Interface}
+    \acro{AWS}{Amazon Web Services}
+    \acro{CI}{Continuous Integration}
+    \acro{CD}{Continuous Development}
+    \acro{CTO}{Chief Technology Officer}
+    \acro{EBU}{European Broadcasting Union}
+    \acro{FOSS}{Free and Open-Source Software}
+    \acro{SDK}{Software Development Kit}
+    \acro{SKS}{Scalable Kubernetes Service}
+    \acro{UI}{User Interface}
+    \acro{WIPO}{World Intellectual Property Organization}
+\end{acronym}
 
 \end{document}
